@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ebe99ee1-f6a9-4646-98f2-c9b460c8fbf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LV.00/.idea/LV.00.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.00/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.00/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.00/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.00/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.01/.idea/LV.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.01/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.01/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.01/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.01/LV.01.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.02/.idea/LV.02.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.02/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.02/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.02/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LV.02/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Study project/.idea/Study project.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Study project/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Study project/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Study project/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Study project/Section-01.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/.idea/第二次-LV2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/cmd/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/color/color.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/card.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/card/mycard.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/character.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/dragon.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/effect.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/effect/battlecry.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/effect/charge.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/game.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/player.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第一次-LV1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第一次-LV1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第一次-LV1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第一次-LV1/.idea/第一次-LV1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第一次-LV1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第二次-LV.1/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第二次-LV.1/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第二次-LV.1/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第二次-LV.1/.idea/第二次-LV.1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第二次-LV.1/main.go" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" path="D:\Go" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1T6X6R7Gs0DlgCqGGaMa7SRIy55" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="go.sdk.automatically.set" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
