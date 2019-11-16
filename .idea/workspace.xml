@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebe99ee1-f6a9-4646-98f2-c9b460c8fbf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/第三次-LV2/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build 第四次-LV1">
+  <component name="RunManager" selected="Go Build.go build main.go">
     <configuration name="go build 第四次-LV1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -68,8 +69,17 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/第三次-LV2/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build 第四次-LV1" />
         <item itemvalue="Go Build.go build Study project/try" />
       </list>
