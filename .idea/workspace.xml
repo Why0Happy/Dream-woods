@@ -1,58 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ebe99ee1-f6a9-4646-98f2-c9b460c8fbf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LV.00/.idea/LV.00.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.00/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.00/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.00/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.00/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.01/.idea/LV.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.01/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.01/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.01/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.01/LV.01.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.02/.idea/LV.02.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.02/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.02/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.02/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LV.02/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Study project/.idea/Study project.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Study project/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Study project/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Study project/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Study project/Section-01.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/.idea/第二次-LV2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/cmd/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/color/color.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/card.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/card/mycard.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/character.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/dragon.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/effect.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/effect/battlecry.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/effect/charge.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/game.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mashiroc.fun/dragongame/game/player.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第一次-LV1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第一次-LV1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第一次-LV1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第一次-LV1/.idea/第一次-LV1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第一次-LV1/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第二次-LV.1/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第二次-LV.1/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第二次-LV.1/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第二次-LV.1/.idea/第二次-LV.1.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/第二次-LV.1/main.go" afterDir="false" />
+    <list default="true" id="ebe99ee1-f6a9-4646-98f2-c9b460c8fbf8" name="Default Changelist" comment="$ git commit&#10;使用到：&#10;time包：Unix时间戳转换为具体时间&#10;os,bufio包将输入字段存入字典&#10;strconv包将字符串转类型换为整型">
+      <change afterPath="$PROJECT_DIR$/Study project/try/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第四次-LV1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" path="D:\Go" />
   <component name="Git.Settings">
@@ -61,10 +26,18 @@
   <component name="ProjectId" id="1T6X6R7Gs0DlgCqGGaMa7SRIy55" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="GO_FMT" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -78,6 +51,32 @@
       </list>
     </option>
   </component>
+  <component name="RunManager" selected="Go Build.go build 第四次-LV1">
+    <configuration name="go build 第四次-LV1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/第四次-LV1/main.go" />
+      <package value="第四次-LV1" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build Study project/try" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/Study project/try/main.go" />
+      <package value="Study project/try" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build 第四次-LV1" />
+        <item itemvalue="Go Build.go build Study project/try" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
@@ -86,10 +85,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="$ git commit&#10;使用到：&#10;time包：Unix时间戳转换为具体时间&#10;os,bufio包将输入字段存入字典&#10;strconv包将字符串转类型换为整型" />
+    <option name="LAST_COMMIT_MESSAGE" value="$ git commit&#10;使用到：&#10;time包：Unix时间戳转换为具体时间&#10;os,bufio包将输入字段存入字典&#10;strconv包将字符串转类型换为整型" />
   </component>
 </project>
