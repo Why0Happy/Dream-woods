@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebe99ee1-f6a9-4646-98f2-c9b460c8fbf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/第五次-LV1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/第六次-LV1/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -77,22 +77,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build main.go (2)">
+  <component name="RunManager" selected="Go Build.go build main.go (3)">
     <configuration name="go build 第四次-LV1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <working_directory value="$PROJECT_DIR$/" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/第四次-LV1/main.go" />
       <package value="第四次-LV1" />
-      <directory value="$PROJECT_DIR$/" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build Study project/try" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="src" />
-      <working_directory value="$PROJECT_DIR$/" />
-      <kind value="PACKAGE" />
-      <filePath value="$PROJECT_DIR$/Study project/try/main.go" />
-      <package value="Study project/try" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -112,6 +103,14 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go (3)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="src" />
+      <working_directory value="$PROJECT_DIR$/" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/第六次-LV1/main.go" />
+      <directory value="$PROJECT_DIR$/" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -122,11 +121,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build main.go (3)" />
         <item itemvalue="Go Build.go build main.go (2)" />
         <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go" />
         <item itemvalue="Go Build.go build 第四次-LV1" />
-        <item itemvalue="Go Build.go build Study project/try" />
       </list>
     </recent_temporary>
   </component>
@@ -156,6 +155,7 @@
     <MESSAGE value="$ git commit&#10;使用到：&#10;time包：Unix时间戳转换为具体时间&#10;os,bufio包将输入字段存入字典&#10;strconv包将字符串转类型换为整型" />
     <MESSAGE value="$ git commit&#10;运用管道解决多协程输出冲突" />
     <MESSAGE value="$ git commit&#10;协程训练" />
-    <option name="LAST_COMMIT_MESSAGE" value="$ git commit&#10;协程训练" />
+    <MESSAGE value="$ web" />
+    <option name="LAST_COMMIT_MESSAGE" value="$ web" />
   </component>
 </project>
