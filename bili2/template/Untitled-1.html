@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>哔哩哔哩 (゜-゜)つロ 干杯~-bilibili</title>
+    <script type="text/javascript">
+  
+   function change(){
+        document.getElementById('id01').style.display='none';
+        document.getElementById('id02').style.display='block';
+    }
+
+  window.onload = function () {
+            var back1=document.getElementById('back1');
+            var back1div=document.getElementById('back1 div');
+            var container = document.getElementById('container');
+            var list = document.getElementById('back');
+            var buttons = document.getElementById('buttons').getElementsByTagName('span');
+            var index = 1;
+            var len = 5;
+            var animated = false;
+            var interval = 2750;
+            var timer;
+            var modal = document.getElementById('id01');
+
+         
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}            
+        
+        function discover(){
+            back1div.style.opacity=0.7;
+        }
+
+        function cover(){
+            back1div.style.opacity=0;
+ 
+        }
+        
+        back1.onmouseover=discover;
+        back1.onmouseout=cover;
+
+            function animate (offset) {
+                if (offset == 0) {
+                    return;
+                }
+                animated = true;
+                var time = 300;
+                var inteval = 10;
+                var speed = offset/(time/inteval);
+                var left = parseInt(list.style.left) + offset;
+
+                var go = function (){
+                    if ( (speed > 0 && parseInt(list.style.left) < left) || (speed < 0 && parseInt(list.style.left) > left)) {
+                        list.style.left = parseInt(list.style.left) + speed + 'px';
+                        setTimeout(go, inteval);
+                    }
+                    else {
+                        list.style.left = left + 'px';
+                        if(left>-200){
+                            list.style.left = -550 * len + 'px';
+                        }
+                        if(left<(-600 * len)) {
+                            list.style.left = '-550px';
+                        }
+                        animated = false;
+                    }
+                }
+                go();
+            }
+
+            function showButton() {
+                for (var i = 0; i < buttons.length ; i++) {
+                    if( buttons[i].className == 'on'){
+                        buttons[i].className = '';
+                        break;
+                    }
+                }
+                buttons[index - 1].className = 'on';
+            }
+
+            function play() {
+                timer = setTimeout(function () {
+                    if (animated) {
+                    return;
+                }
+                if (index == 5) {
+                    index = 1;
+                }
+                else {
+                    index += 1;
+                }
+                animate(-550);
+                showButton();
+                    play();
+                }, interval);
+            }
+            function stop() {
+                clearTimeout(timer);
+            }
+
+            for (var i = 0; i < buttons.length; i++) {
+                buttons[i].onclick = function () {
+                    if (animated) {
+                        return;
+                    }
+                    if(this.className == 'on') {
+                        return;
+                    }
+                    var myIndex = parseInt(this.getAttribute('index'));
+                    var offset = -550 * (myIndex - index);
+
+                    animate(offset);
+                    index = myIndex;
+                    showButton();
+                }
+            }
+
+            container.onmouseover = stop;
+            container.onmouseout = play;
+
+            play();
+
+
+        }
+        
+</script>
+</head>
+<style type="text/css">
+#back1{
+    width: 100%;
+    height: 180px;
+    background-image: linear-gradient(rgba(36, 27, 27, 0.5),rgba(36,27,27,0)),url(bilibiliwenter.png);
+    float:right;
+    position: absolute;
+    left:0px;
+    top: 0px;
+}
+
+#back1 div{
+    width: 350px;
+    height: 30px;
+    background-color: black;
+    opacity: 0;
+    border-radius: 7px;
+    position: relative;
+    top: 110px;
+    left: 400px;
+    transition-duration: 0.4s;
+}
+
+#back1 span{
+    color: white;
+    padding: 2px;
+    display: flex;
+    align-items: center;
+    cursor: default;
+}
+
+.head{
+    height:30px;
+    width: 100%;
+    margin: auto;
+    float: left;
+    position: absolute;
+}
+
+.head span{
+    height: 30px;
+    margin-left: 15px;
+    color: white;
+}
+
+.head span a{
+    color: white;
+     font-family:"微软雅黑";
+     text-decoration:none
+}
+
+.input{
+    margin-left: 10px;
+    display: inline;
+    font-size: 0px;
+}
+
+.zhuce{
+    border: none;
+    color: white;
+    padding: 8px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.3s;
+    cursor: pointer;
+    background-color: rgb(253, 131, 152);
+    border-radius: 4px;
+}
+
+.zhuce:hover{
+    opacity: 0.9;
+}      
+
+.head1{
+    width: 100%;
+    height: 150px;
+}
+
+.head1 a{
+    position: absolute;
+    margin-top:55px;
+    margin-left: 150px;
+}
+
+.list{
+    margin-left: 10px;
+    position: relative;
+    top: 34px;
+    left: 150px;
+}
+
+#list span{
+    display:block;
+    float: left;
+    position: relative;
+    top: 20px;
+    margin-left: 173px;
+}
+
+.find{
+    float:left;
+    position: relative;
+    left:40px;
+    bottom: 30px;
+}
+
+.find a{
+    text-decoration:none;
+    color: black;
+    margin-left: 10px;
+}
+
+.find em{
+    font-style: normal;
+    font-size: 12px;
+    display: inline-block;
+    background:#73c9e5;
+    border-radius: 2px;
+    color:#fff;
+    margin-left: 1px;
+    transform: scale(.85);
+    width: 32px;
+    text-align: center;
+    font: 14px -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,sans-serif;
+    font-style: normal;
+    font-size: 12px;
+}
+
+#container{
+    width: 550px;
+    height:242px;
+    overflow: hidden;
+    position:relative;
+    left:150px;
+    top: 20px;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+#back{
+    width: 3850px;
+    height: 242px;
+    position: absolute;
+    z-index: 1;
+}
+
+#back img{
+    float: left;
+    width: 550px;
+    height:242px;
+}
+
+#buttons {
+    position: relative;
+    height: 10px;
+    width:100px;
+    z-index:2;
+    bottom:3px ;
+    left:590px;
+}
+
+#buttons span{
+    cursor: pointer;
+    float: left; 
+    border: 1px solid rgb(104, 198, 235); 
+    width: 10px; height: 10px; border-radius: 50%;
+    background: rgb(255, 255, 255); 
+    margin-left: 8px;
+}
+
+#buttons .on{
+    border-width:0;
+    border-color: transparent;
+    background-color: transparent;
+    background-image:url(icon_slide_selected.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: scale(1.8);
+}
+
+.new{
+    position: absolute;
+    left: 705px;
+    bottom: 203px;
+}
+
+.a1{
+    width:206px;
+    height: 116px;
+    margin-left: 10px;
+    background-image:linear-gradient(to top,rgba(36, 27, 27, 0.5),rgba(36,27,27,0)),url(jiabaili.jpg@257w_145h_1c_100q.png);
+    background-size: 100%;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+
+.a2{
+    width:206px;
+    height: 116px;
+    margin-left: 10px;
+    background-image:linear-gradient(to top,rgba(36, 27, 27, 0.5),rgba(36,27,27,0)),url(hero.jpg@257w_145h_1c_100q.png);
+    background-size: 100%;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+
+.a3{
+    width:206px;
+    height: 116px;
+    margin-left: 10px;
+    background-image:linear-gradient(to top,rgba(36, 27, 27, 0.5),rgba(36,27,27,0)),url(AAAA.jpg@257w_145h_1c_100q.png);
+    background-size: 100%;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+
+.a4{
+    width:206px;
+    height: 116px;
+    margin-left: 10px;
+    background-image:linear-gradient(to top,rgba(36, 27, 27, 0.5),rgba(36,27,27,0)),url(yellow.jpg@257w_145h_1c_100q.png);
+    background-size: 100%;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+
+.a5{
+    width:206px;
+    height: 116px;
+    margin-left: 10px;
+    background-image:linear-gradient(to top,rgba(36, 27, 27, 0.5),rgba(36,27,27,0)),url(dance.jpg@257w_145h_1c_100q.png);
+    background-size: 100%;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+
+.a6{
+    width:206px;
+    height: 116px;
+    margin-left: 10px;
+    background-image:linear-gradient(to top,rgba(36, 27, 27, 0.5),rgba(36,27,27,0)),url(daolun.jpg@257w_145h_1c_100q.png);
+    background-size:100%;
+    border-radius: 3px;
+    transition-duration: 0.4s;
+}
+
+.a1:hover{opacity: 0.5;}
+.a2:hover{opacity: 0.5;}
+.a3:hover{opacity: 0.5;}
+.a4:hover{opacity: 0.5;}
+.a5:hover{opacity: 0.5;}
+.a6:hover{opacity: 0.5;}
+
+.tyle{
+    width: auto;
+    height: 160px;
+    background-color: rgb(166, 224, 247,0.1);
+    display: flex;
+    justify-content: space-around;
+}
+
+.con{
+    height: 160px;
+    width: 1200px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.tyle1 span{
+    position: relative;
+    line-height: 30px;
+}
+
+.tyle1 a{
+    text-decoration:none;
+    color: black;
+    margin-right: 16px;
+}
+
+.tyle1 a:hover{opacity: 0.7;}
+
+.tyle2 {
+    margin-right: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tyle2 div{
+    margin-right: 10px;
+    text-align:center;
+}
+
+.tyle2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.tyle2 a:hover{color: rgb(253, 131, 152);}
+
+.modal{
+    left: 0;
+    top: 0;
+    display: none;
+    z-index: 3;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.con1{
+    background-color: #fefefe;
+    margin: 3% auto auto auto;
+    border: 1px solid #888;
+    width: 40%;
+    animation: animatezoom 0.4s; 
+}
+
+.clossBtn{
+    position:absolute;
+    top: -10px;
+    right:25px;
+    font-size: 45px;
+    color: black;
+    font-weight: bold;
+    cursor: default;
+}
+
+.clossBtn:hover{
+    color: red;
+}
+
+.imgcontant{
+    text-align: center;
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+img.avatar{
+    width: 40%;
+    border-radius: 50%;
+}
+
+.main{
+    margin-left: 16px;
+}
+
+input[type=text], input[type=password] {
+    width: 95%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+.button{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    border-style: none;
+    width: 95%;
+    padding: 12px;
+    background-color:rgb(253, 131, 152);
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cancel{
+    margin-top: 10px;
+    padding: 24px;
+    background-color: #f1f1f1;
+}
+
+.cancel button{
+    background-color:#f44336 ;
+    cursor: pointer;
+    padding: 10px 18px;
+    border: none;
+    color: white;
+}
+
+button:hover{
+    opacity: 0.8;
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+}
+
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+ 
+@media screen and (max-width: 420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active {padding: 2px;}
+}
+ 
+@media screen and (max-width: 290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+
+
+
+</style>
+
+<body>
+    <div id="back1">
+        <div id="back1 div"><span>冬天，记得裹暖和些哦。bilibili干杯[]~(￣▽￣)~*</span></div>
+    </div>
+    <div class="head">
+        <span><a href="https://www.bilibili.com/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.1">主站</a></span>
+        <span><a href="https://www.bilibili.com/anime/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.2">番剧</a></span>
+        <span><a href="https://game.bilibili.com/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.3">游戏中心</a></span>
+        <span><a href="https://live.bilibili.com/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.4">直播</a></span>
+        <span><a href="https://show.bilibili.com/platform/home.html?msource=pc_web&spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.5">会员购</a></span>
+        <span><a href="https://manga.bilibili.com/?from=bill_top_mnav&spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.6">漫画</a></span>
+        <span><a href="https://www.bilibili.com/v/game/match/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.7">赛事</a></span>
+        <span><a href="https://app.bilibili.com/?spm_id_from=333.851.b_696e7465726e6174696f6e616c486561646572.9">下载APP</a></span> 
+        <form class="input">
+            <input style="width: 400px;height: 24px;" placeholder="哔哩哔哩 (゜-゜)つロ 干杯~-bilibili">
+            <input type="button" style="border: none;background-color:rgb(35, 204, 226);padding:5px 15px;color: white;" value="搜索">
+        </form>
+        <img style="height: 18px;width:20px;position: relative;left: 79px;top: 3.5px;" src="index.png">
+        <span style="margin-left: 90px;height: 30px;cursor: pointer;"><a href="主页\MyHomePage\你的个人主页.html" target="block">主页</a></span>
+        <span><a href="#">消息</a></span>
+        <span><a href="#">动态</a></span>
+        <span><a href="#">收藏</a></span>
+        <span><a href="#">历史</a></span>
+        <span><a href="#">创作中心</a></span>
+        <form style="margin-left: 10px;display: inline;">
+            <input type="button" class="zhuce" value="登录" onclick="document.getElementById('id01').style.display='block'">
+        </form>       
+    </div>
+    <div class="head1">
+        <a href="https://www.bilibili.com" target="_blank" ><img src="1be2fd76cc98cdc6a595c05c3134fbf937a1c126.png"></a>
+    </div>
+    <div style="height: 75px;">
+        <a class="list" href="https://www.bilibili.com"><img src="2020_01_14_14_05.59.bmp"></a>
+        <a class="list" href="https://t.bilibili.com/?spm_id_from=333.851.b_7072696d61727950616765546162.2" target="_blank"><img src="dongtai.bmp"></a>
+        <a class="list" href="https://www.bilibili.com/ranking?spm_id_from=333.851.b_7072696d61727950616765546162.3" target="_blank"><img src="paihangbang.bmp"></a>
+    </div>
+    <div id="list">
+        <span>首页</span>
+        <span style="margin-left: 35px;">动态</span>
+        <span style="margin-left: 22px;">排行榜</span>
+    </div>
+    <div class="find">
+        <span>
+            <div>
+                <a href="https://www.bilibili.com/v/douga/"><span>动画<em>999+</em></span></a>
+                <a href="https://www.bilibili.com/v/music/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.3"><span>音乐<em>999+</em></span></a>
+                <a href="https://www.bilibili.com/v/dance/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.32"><span>舞蹈<em>420</em></span></a>
+                <a href="https://www.bilibili.com/v/technology/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.43"><span>科技<em>999+</em></span></a>
+                <a href="https://www.bilibili.com/v/life/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.61"><span>生活<em>999+</em></span></a>
+                <a href="https://www.bilibili.com/v/fashion/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.67"><span>时尚<em>592</em></span></a>
+                <a href="https://www.bilibili.com/v/ent/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.77"><span>娱乐<em>999+</em></span></a>
+                <a href="https://www.bilibili.com/cinema/?spm_id_from=333.5.b_7072696d6172795f6d656e75.92"><span>放映厅<em>426</em></span></a>
+                <a href="https://www.bilibili.com/v/life/animal?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.97#/"><span>动物圈<em>999+</em></span></a>
+                <a href="https://www.bilibili.com/v/game/stand_alone?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.99#/"><span>单机游戏<em>999+</em></span></a>
+            </div>
+        </span>
+        <span>
+            <div style="position: relative;top: 28px;">
+                <a href="https://www.bilibili.com/anime/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.7"><span>番剧<em>57</em></span></a>
+                <a href="https://www.bilibili.com/guochuang/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.15"><span>国创<em>57</em></span></a>
+                <a href="https://www.bilibili.com/v/game/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.39"><span>游戏<em>57</em></span></a>
+                <a href="https://www.bilibili.com/v/digital/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.44"><span>数码<em>57</em></span></a>
+                <a href="https://www.bilibili.com/v/kichiku/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.70"><span>鬼畜<em>57</em></span></a>
+                <a href="https://www.bilibili.com/v/ad/ad/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.81#/"><span>广告<em>57</em></span></a>
+                <a href="https://www.bilibili.com/v/cinephile/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.84"><span>影视<em>57</em></span></a>
+                <a href="https://www.bilibili.com/v/life/funny?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.88#/"><span>搞笑<em>57</em></span></a>
+                <a href="https://www.bilibili.com/v/life/food?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.91#/"><span>&emsp;美食<em>57</em></span></a>
+                <a href="https://www.bilibili.com/v/life/daily/?spm_id_from=333.851.b_7072696d6172794368616e6e656c4d656e75.100#/530003"><span>&emsp;VLOG</span></a>
+            </div>
+        </span>
+        
+    </div>    
+    <div id="container" >
+        <div id="back" style="left: -550px;">
+            <img src="ece6ab129f65c2358468815e39d5cd7a0404e9eb.png@1375w_605h_1c_100q.webp" alt="1">
+            <img src="9b3e842e54106aa62ea632b6b96a0632.jpg@1375w_605h_1c_100q.webp" alt="1">
+            <img src="10f7f549e32355bcf210f212c8aaf462b068bd05.jpg@1375w_605h_1c_100q.webp" alt="2">
+            <img src="a6c931837ccb00fce31e41bdd615f6e9.jpg@1375w_605h_1c_100q.webp" alt="3">
+            <img src="b03b0d8ed5720ce43068705382c2f274da3fc2c1.jpg@1375w_605h_1c_100q.webp" alt="4">
+            <img src="ece6ab129f65c2358468815e39d5cd7a0404e9eb.png@1375w_605h_1c_100q.webp" alt="5">
+            <img src="9b3e842e54106aa62ea632b6b96a0632.jpg@1375w_605h_1c_100q.webp" alt="5">
+        </div>
+    </div>
+    <div id="buttons">
+        <span index="1" class="on"></span>
+        <span index="2"></span>
+        <span index="3"></span>
+        <span index="4"></span>
+        <span index="5"></span>
+    </div>
+    <div class="new">
+        <span><div>
+        <a href="https://www.bilibili.com/video/av83341369"><img class="a1"></a>
+        <a href="https://www.bilibili.com/video/av83699879"><img class="a2"></a>
+        <a href="https://www.bilibili.com/video/av83462504"><img class="a3"></a> 
+        </div></span>
+        <span><div style="margin-top: 6px;">
+        <a href="https://www.bilibili.com/video/av83611008"><img class="a4"></a>
+        <a href="https://www.bilibili.com/video/av83450119"><img class="a5"></a>
+        <a href="https://www.bilibili.com/video/av83410286"><img class="a6"></a>
+        </div></span>
+    </div><br/><br/><br/>
+    <div class="tyle">
+        <div class="con">
+        <div class="tyle1">
+            <span style="color:rgba(150, 150, 150);font-family: '微软雅黑';">bilibili</span><br/><br/>
+            <span>
+                <a href="">关于我们</a>
+                <a href="">加入我们</a>
+                <a href="">bilibili认证</a>
+            </span><br/>
+            <span>
+                <a href="">联系我们</a>
+                <a href="">友情链接</a>
+                <a href="">Investor Relations</a>
+            </span><br/>
+            <span>
+                <a href="">用户协议</a>
+                <a href="">隐私协议</a>
+            </span>
+        </div>
+        <div class="tyle1" style="margin-left: 60px;">
+            <span style="color:rgba(150, 150, 150);font-family: '微软雅黑';">传送门</span><br/><br/>
+            <span>
+                <a href="">帮助中心</a>
+                <a href="">侵权申述</a>
+                <a href="">壁纸站</a>
+            </span><br/>
+            <span>
+                <a href="">高级弹幕</a>
+                <a href="">活动中心</a>
+                <a href="">专车号服务中心</a>
+            </span><br/>
+            <span>
+                <a href="">活动专题页</a>
+                <a href="">用户反馈论坛</a>
+                <a href="">名人堂</a>
+            </span>
+        </div><br/><br/>
+        <div class="tyle2">
+            <div >
+                <a href=""><img src="下载.png"><br/>客户端下载</a>
+            </div>
+            <div>
+                <a href=""><img src="weibo.png"><br/>新浪微博</a>
+            </div>
+            <div>
+                <a href=""><img src="微信.png"><br/>官方微信</a>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div id="id01" class="modal">
+        <form class="con1" method="post" action="login">
+            
+            <div class="imgcontant">
+                <span onclick="document.getElementById('id01').style.display='none'" class="clossBtn">&times;</span>
+                <img src="img_avatar.png" class="avatar">
+            </div>
+            <div class="main">
+                <p><b>用户名</b></p>
+                <input type="text" placeholder="请输入用户名" name="username" required>
+
+                <p><b>密码</b></p>
+                <input type="password" placeholder="请输入密码" name="password" required>
+
+                <button type="submit" class="button">登录</button></br>
+                <input type="checkbox" checked="checked" style="margin-right: 8px;">记住我
+            </div>
+            <div class="cancel">
+                <button onclick="document.getElementById('id01').style.display='none'">Cancel</button> 
+                <span style="float: right;padding: 10px;">如果没有账号请<a href="#" onclick="change()">注册</a></span>
+            </div>
+        </form>
+    </div>
+    
+    <div id="id02" class="modal">
+        <span onclick="document.getElementById('id02').style.display='none'" class="clossBtn" style="position: relative;left:1100px;top: 155px;">&times;</span>
+        <form class="con1" style="margin: 10% auto auto auto;" method="post" action="register">
+
+            
+            <div class="main" >
+                
+                <p><b>用户名</b></p>
+                <input type="text" placeholder="请设置你想要的用户名" name="username" required>
+
+                <p><b>密码</b></p>
+                <input type="password" placeholder="请输入你的密码" name="password" required>
+
+                <p><b>重复输入密码</b></p>
+                <input type="password" placeholder="请再次输入密码" mane="password-repeat" required>
+            </div>
+
+            <div class="cancel" style="margin-top: 20px;"> 
+                <button type="submit" style="padding: 9px 24px;background-color: rgb(253, 131, 152);">提交</button>
+                <button onclick="document.getElementById('id02').style.display='none'" style="float: inline-end;">Cancel</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+</html>

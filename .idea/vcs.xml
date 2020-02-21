@@ -2,6 +2,7 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bili2/template/主页/MyHomePage" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/gin-contrib/sse" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/gin-gonic/gin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/github.com/go-playground/locales" vcs="Git" />

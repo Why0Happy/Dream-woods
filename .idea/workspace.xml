@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebe99ee1-f6a9-4646-98f2-c9b460c8fbf8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/bili/controller/file.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bili/controller/user.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bili/main/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/第七次-LV1/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/第七次-LV1/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/考核-Q 04/main.go" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +60,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bili2/template" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -62,6 +68,16 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GoProjects\src\bili2\template" />
+      <recent name="D:\GoProjects\src\bili2\main\template" />
+      <recent name="D:\GoProjects\src\bili2\main" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\GoProjects\src\bili\controller" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -75,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build 考核-Q 01">
+  <component name="RunManager" selected="Go Build.go build bili2/main">
     <configuration name="go build 第七次-LV1" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <working_directory value="$PROJECT_DIR$/" />
@@ -94,19 +110,21 @@
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build bili2/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/LV.00/main.go" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/bili2/main/main.go" />
+      <package value="bili2/main" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
-    <configuration name="go build try.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+    <configuration name="go build bili/main" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="src" />
       <working_directory value="$PROJECT_DIR$/" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/实验包/try.go" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/bili/main/main.go" />
+      <package value="bili/main" />
       <directory value="$PROJECT_DIR$/" />
       <method v="2" />
     </configuration>
@@ -121,11 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build 考核-Q 01" />
+        <item itemvalue="Go Build.go build bili2/main" />
         <item itemvalue="Go Build.go build 第七次-LV1" />
+        <item itemvalue="Go Build.go build bili/main" />
+        <item itemvalue="Go Build.go build 考核-Q 01" />
         <item itemvalue="Go Build.go build 实验包" />
-        <item itemvalue="Go Build.go build try.go" />
-        <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
   </component>
@@ -160,5 +178,12 @@
     <MESSAGE value="$ 第七次课" />
     <MESSAGE value="$ 秋季考核" />
     <option name="LAST_COMMIT_MESSAGE" value="$ 秋季考核" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="DlvErrorBreakpoint" />
+      </default-breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
